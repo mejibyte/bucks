@@ -1,3 +1,4 @@
+#encoding: utf-8
 require 'rubygems'
 require 'bundler'
 begin
@@ -16,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/andmej/bucks"
   gem.license = "MIT"
   gem.summary = %Q{Find the currency used in any country in the world}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{Find the currency used in any country in the world}
   gem.email = "andmej@gmail.com"
   gem.authors = ["Andrés Mejía"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
