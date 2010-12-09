@@ -22,6 +22,8 @@ I suggest to pair this gem with [mumboe-currency](https://github.com/mumboe/curr
     > Currency.Money("1,203.43", iso_code).to_s
     => "₪1,203.43 "
     > iso_code = Bucks::Currency.find("Germany")
+    => :EUR
+    > Currency.Money("1,203.43", iso_code).to_s    
     => "€1,203.43"
 
 == Contributing to bucks
