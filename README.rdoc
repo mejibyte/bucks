@@ -1,6 +1,28 @@
 = bucks
 
-Description goes here.
+Bucks lets you find what currency is used on any country. Given a country, it returns the "ISO 4217 code":http://www.xe.com/iso4217.php of the currency used there.
+
+    > Bucks::Currency.find("Colombia")
+    => :COP
+    > Bucks::Currency.find("France")
+    => :EUR 
+    > Bucks::Currency.find("United States")
+    => :USD
+    > Bucks::Currency.find("United Kingdom")
+    => :GBP    
+    > Bucks::Currency.find("Unicornland")
+    => nil     
+
+The list of supported countries matches that of the "country_select plugin":https://github.com/rails/country_select for Rails. Check "this file":https://github.com/andmej/bucks/blob/master/lib/bucks/currency.rb to see the complete list of countries.
+
+I suggest to pair this gem with "mumboe-currency":https://github.com/mumboe/currency. That way, you can do stuff like:
+
+    > iso_code = Bucks::Currency.find("Israel")
+    => :ILS 
+    > Currency.Money("1,203.43", iso_code).to_s
+    => "₪1,203.43 "
+    > iso_code = Bucks::Currency.find("Germany")
+    => "€1,203.43"
 
 == Contributing to bucks
  
