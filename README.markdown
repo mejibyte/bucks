@@ -1,4 +1,5 @@
-= bucks
+bucks
+=====
 
 Bucks lets you find what currency is used on any country. Given a country, it returns the [ISO 4217 code](http://www.xe.com/iso4217.php) of the currency used there.
 
@@ -26,7 +27,8 @@ I suggest to pair this gem with [mumboe-currency](https://github.com/mumboe/curr
     > Currency.Money("1,203.43", iso_code).to_s    
     => "€1,203.43"
 
-== Contributing to bucks
+Contributing to bucks
+====
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -36,7 +38,8 @@ I suggest to pair this gem with [mumboe-currency](https://github.com/mumboe/curr
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+Copyright
+===
 
 Copyright (c) 2010 Andrés Mejía. See LICENSE.txt for
 further details.
