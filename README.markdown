@@ -26,6 +26,16 @@ I suggest to pair this gem with [mumboe-currency](https://github.com/mumboe/curr
     => :EUR
     > Currency.Money("1,203.43", iso_code).to_s    
     => "€1,203.43"
+    
+Installation
+===
+ 
+    gem install bucks
+
+or if you are using Bundler, add this line to your Gemfile:
+
+    gem "bucks"
+
 
 Contributing to bucks
 ====
